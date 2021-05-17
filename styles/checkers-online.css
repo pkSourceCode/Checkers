@@ -1,0 +1,98 @@
+#checker_online
+{
+    width:100%;
+    height:100%;
+    display: block;
+    position:absolute;
+    top:0;
+    left:0;
+    background-color: darkolivegreen;
+    transition: opacity 1s ease-in-out;
+    margin:0;
+    padding:0;
+}
+
+.btn_back_to_menu
+{
+    z-index: 900;
+}
+
+#checker_online.show
+{
+    z-index: 990;
+    opacity: 1;
+}
+
+#checker_online.hide
+{
+    z-index: 0;
+    opacity: 0;
+}
+
+.btn_checker_online
+{
+    width:100%;
+    text-align: center;
+    height:50px;
+    font-weight:bold;
+    border-radius: 10px 10px 10px 10px;
+    transition: font-size 0.5s ease-in-out;
+}
+
+.btn_checker_online:hover
+{
+    cursor:pointer;
+    color:white;
+    font-size: 1.2em;
+    background-color: cornflowerblue;
+}
+
+.btn_checker_online:active
+{
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    background-color:dodgerblue;
+}
+
+#btn_surrender_reset:focus
+{
+    outline: none;
+}
+
+#checker_online_top
+{
+    width:100%;
+    height:20%;
+    position:relative;
+    background-color: saddlebrown;
+}
+
+#checker_online_left
+{
+    width:45%;
+    height:80%;
+    position:relative;
+    float:left;
+}
+
+#checker_online_left_top
+{
+    width: 100%;
+    height:80%;
+    position:relative;
+}
+
+#checker_online_left_bot
+{
+    width:100%;
+    height:20%;
+    position: relative;
+}
+
+#checker_online_right
+{
+    width:55%;
+    height:80%;
+    position:relative;
+    float:left;
+}

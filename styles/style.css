@@ -1,0 +1,73 @@
+@font-face
+{
+    font-family: 'title-font';
+    src: url("../res/fonts/alfa/AlfaSlabOne-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: 'sub-title-font';
+    src: url("../res/fonts/russo/RussoOne-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: 'my-web-font';
+    src: url("../res/fonts/varela/VarelaRound-Regular.ttf");
+}
+
+@font-face
+{
+    font-family: 'score';
+    src: url("../res/fonts/lobster/Lobster-Regular.ttf");
+}
+
+html
+{
+    font-family: 'my-web-font', serif;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+    overflow: hidden;
+}
+
+body
+{
+    background-image: -moz-linear-gradient(to bottom right, darkseagreen, darkolivegreen);
+    background-image: -o-linear-gradient(to bottom right, darkseagreen, darkolivegreen);
+    background-image: -ms-linear-gradient(to bottom right, darkseagreen, darkolivegreen);
+    background-image: -webkit-linear-gradient(to bottom right, darkseagreen, darkolivegreen);
+    background-image: linear-gradient(to bottom right, darkseagreen, darkolivegreen);
+    overflow: hidden;
+}
+
+/*body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}*/
+
+#board
+{
+    width: 50%;
+    height: 50%;
+    margin: 0 auto;
+    display: inline-flex;
+    border: 1px solid black;
+}
+
+/*#board
+{
+    width:50%;
+    height:50%;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 1px solid black;
+}*/

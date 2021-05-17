@@ -1,0 +1,136 @@
+#board.show
+{
+    z-index: 99;
+}
+
+#board.hide
+{
+    z-index: 0;
+    display: none;
+}
+
+#game_alert
+{
+    position:fixed;
+    top:0;
+    left:0;
+    width: 100%;
+    height:100%;
+    transition: opacity 1s ease-in-out, background-color 1s ease-in-out;
+}
+
+#game_alert.show
+{
+    z-index: 999;
+    opacity: 1;
+    background-color: rgba(71, 56, 56, 0.5);
+}
+
+#game_alert.hide
+{
+    z-index: 0;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.game_alert_box
+{
+    width:400px;
+    min-height:200px;
+    position:fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px 10px 10px 10px;
+    box-shadow: 1px 1px 10px 5px black;
+    background-image: linear-gradient(to bottom, black, darkolivegreen 80%);
+    transition: opacity 1s ease-in-out;
+    z-index: 10000;
+}
+
+.game_alert_box.show
+{
+    opacity: 1;
+}
+
+.game_alert_box.hide
+{
+    opacity: 0;
+}
+
+.game_alert_box_top
+{
+    width:100%;
+    height:15%;
+    min-height:40px;
+    position:relative;
+    font-weight: bolder;
+    font-size: 1.4em;
+    color:white;
+    display: flex;
+    text-indent: 20px;
+    cursor:pointer;
+    align-items: center;
+}
+
+.game_alert_box_mid
+{
+    width: 100%;
+    height: 75%;
+    min-height: 150px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white;
+}
+
+.game_alert_box_mid p
+{
+    width: 100%;
+    text-align: center;
+    padding:0 15px 0 15px;
+}
+
+.game_alert_box_bot
+{
+    height:15%;
+    min-height:40px;
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game_alert_box_bot button
+{
+    width:100%;
+    min-height:40px;
+    background-color: lightgray;
+    border-radius: 0 0 10px 10px;
+    font-weight: bolder;
+    transition: font-size 0.5s ease-in-out;
+    font-size: 1.1em;
+}
+
+.game_alert_box_bot button:hover
+{
+    cursor:pointer;
+    color:white;
+    font-size: 1.4em;
+    background-color: cornflowerblue;
+}
+
+.game_alert_box_bot button:active
+{
+    color:white;
+    text-shadow: 2px 2px 4px #000000;
+    padding-top:5px;
+    padding-left:5px;
+    background-color:dodgerblue;
+}
+
+.game_alert_box_bot button:focus
+{
+    outline: none;
+}

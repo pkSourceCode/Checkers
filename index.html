@@ -1,0 +1,73 @@
+<html lang="en">
+	<head>
+		<title>CHECKERS ONLINE</title>
+		<link rel="icon" type="image/png" href="res/favi/checkerfavi.png"/>
+		<link rel="shortcut icon" type="image/x-icon" href="res/favi/checkerfavi.ico"/>
+		<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/base-style.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/checkers-online.css"/>
+		<link rel="stylesheet" type="text/css" href="styles/custom-alert-box.css"/>
+	</head>
+	<body>
+		<!--<canvas id="board" width="800" height="600"></canvas>-->
+		<div id="wrapper">
+			<!-- Index Main Menu -->
+			<div id="main_content">
+				<h1  id="title" class="hide">CHECKERS</h1>
+				<h4  id="sub_title">ONLINE<span style="font-size: 0.5em;"> V1.0</span></h4>
+				<div id="menu_panel_wrapper">
+					<div id="menu_panel" class="hide">
+						<label>Player 1 <input type="text" id="txt_p1_name" placeholder="Your Name"/></label><hr/>
+						<label>Player 2 <input type="text" id="txt_p2_name" placeholder="Your Opponent's Name"/></label>
+						<hr/>
+						<button id="btn_play_with_ai">GO AGAINST AI</button>
+						<button id="btn_two_players">TWO PLAYERS</button>
+						<button id="btn_play_online" class="server_offline">ONLINE BATTLE<span class="tooltip">Server is Offline</span></button>
+					</div>
+				</div>
+				<!-- Checker Online -->
+				<div id="checker_online" class="hide">
+					<button class="btn_back_to_menu">MENU</button>
+					<div id="checker_online_top"></div>
+					<div id="checker_online_left">
+						<div id="checker_online_left_top"></div>
+						<div id="checker_online_left_bot"></div>
+					</div>
+					<div id="checker_online_right"></div>
+				</div>
+				<!-- Game Panel -->
+				<div id="game_panel" class="hide">
+					<button id="btn_back_to_menu">MENU</button>
+					<div id="game_panel_top">
+						<table>
+							<tr>
+								<th id="player1_name">YOU:</th>
+								<td id="player1_score">0</td>
+								<th id="player2_name">CPU:</th>
+								<td id="player2_score">0</td>
+							</tr>
+						</table>
+						<span><button id="btn_surrender_reset"> SURRENDER & RESET </button></span>
+						<table>
+							<tr>
+								<th id="player1_win_lbl">WINS:</th><td id="player1_win_score">0</td>
+								<th id="player2_win_lbl">LOSE:</th><td id="player2_win_score">0</td>
+							</tr>
+						</table><br/>
+					</div>
+					<div id="game_panel_bot">
+						<canvas id="board" width="800" height="600"></canvas>
+					</div>
+				</div>
+			</div>
+			<div id="game_alert" class="hide"></div>
+		</div>
+	</body>
+	<script type="text/javascript" src="board.js"></script>
+	<script type="text/javascript" src="rule.js"></script>
+	<script type="text/javascript" src="animation.js"></script>
+	<script type="text/javascript" src="player.js"></script>
+	<script type="text/javascript" src="page-animation.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="checkers-online.js"></script>
+</html>
